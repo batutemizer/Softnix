@@ -1,0 +1,11 @@
+<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="sn-gradient" x1="0" y1="0" x2="120" y2="120" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#60a5fa" />
+      <stop offset="0.5" stop-color="#a78bfa" />
+      <stop offset="1" stop-color="#f472b6" />
+    </linearGradient>
+  </defs>
+  <rect width="120" height="120" rx="32" fill="#18181b"/>
+  <text x="50%" y="50%" text-anchor="middle" dominant-baseline="central" font-family="Inter, Arial, sans-serif" font-size="56" font-weight="bold" fill="url(#sn-gradient)">SN</text>
+</svg> 
