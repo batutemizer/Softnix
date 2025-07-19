@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <>
       <BackgroundBlobs />
-      <main className="min-h-screen flex flex-col justify-center items-center bg-background text-foreground px-1 sm:px-0">
+      <main className="min-h-screen flex flex-col justify-center items-center bg-background text-foreground px-1 sm:px-0 pt-[env(safe-area-inset-top)]">
         <Hero />
         <Mission />
         <Stats />

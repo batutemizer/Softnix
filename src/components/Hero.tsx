@@ -89,7 +89,7 @@ export default function Hero() {
       </motion.div>
       {/* Animated Headline */}
       <motion.h1
-        className="text-2xl sm:text-4xl md:text-6xl font-extrabold bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent mb-2 sm:mb-4 flex flex-wrap justify-center"
+        className="text-xl sm:text-3xl md:text-5xl font-extrabold bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent mb-2 sm:mb-4 flex flex-wrap justify-center"
         variants={titleVariants}
         initial="hidden"
         animate="visible"
@@ -104,7 +104,7 @@ export default function Hero() {
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: 0.5, type: "spring" }}
-        className="text-lg sm:text-2xl md:text-4xl font-bold text-gray-700 dark:text-gray-200 mb-4 sm:mb-8"
+        className="text-base sm:text-xl md:text-3xl font-bold text-gray-700 dark:text-gray-200 mb-4 sm:mb-8"
       >
         {headline[1]}
       </motion.h2>

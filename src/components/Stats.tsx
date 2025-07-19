@@ -53,7 +53,7 @@ export default function Stats() {
           className="bg-white dark:bg-[#18181b] rounded-2xl shadow-lg p-4 sm:p-8 flex flex-col items-center text-center border border-gray-100 dark:border-gray-800"
         >
           <span ref={ref1} className="text-3xl sm:text-4xl md:text-5xl font-extrabold bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent mb-2" />
-          <span className="text-base sm:text-lg font-semibold text-gray-700 dark:text-gray-200">{stats[0].label}</span>
+          <span className="text-sm sm:text-base font-semibold text-gray-700 dark:text-gray-200">{stats[0].label}</span>
         </motion.div>
         <motion.div
           key={stats[1].label}
@@ -64,7 +64,7 @@ export default function Stats() {
           className="bg-white dark:bg-[#18181b] rounded-2xl shadow-lg p-4 sm:p-8 flex flex-col items-center text-center border border-gray-100 dark:border-gray-800"
         >
           <span ref={ref2} className="text-3xl sm:text-4xl md:text-5xl font-extrabold bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent mb-2" />
-          <span className="text-base sm:text-lg font-semibold text-gray-700 dark:text-gray-200">{stats[1].label}</span>
+          <span className="text-sm sm:text-base font-semibold text-gray-700 dark:text-gray-200">{stats[1].label}</span>
         </motion.div>
         <motion.div
           key={stats[2].label}
@@ -75,7 +75,7 @@ export default function Stats() {
           className="bg-white dark:bg-[#18181b] rounded-2xl shadow-lg p-4 sm:p-8 flex flex-col items-center text-center border border-gray-100 dark:border-gray-800"
         >
           <span ref={ref3} className="text-3xl sm:text-4xl md:text-5xl font-extrabold bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent mb-2" />
-          <span className="text-base sm:text-lg font-semibold text-gray-700 dark:text-gray-200">{stats[2].label}</span>
+          <span className="text-sm sm:text-base font-semibold text-gray-700 dark:text-gray-200">{stats[2].label}</span>
         </motion.div>
       </motion.div>
     </section>
