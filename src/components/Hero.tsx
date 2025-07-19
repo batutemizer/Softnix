@@ -2,6 +2,7 @@
 import React, { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import gsap from "gsap";
+import Image from "next/image";
 
 const headline = [
   "Web Geliştirme, Tasarım, Kodlama",
@@ -81,7 +82,7 @@ export default function Hero() {
         transition={{ duration: 1, delay: 0.05, type: "spring" }}
         className="mb-4 sm:mb-6 flex items-center justify-center gap-2 sm:gap-3"
       >
-        <img src="/sn-logo.svg" alt="SoftNix Logo" className="w-10 h-10 sm:w-12 sm:h-12 drop-shadow-xl rounded-2xl" />
+        <Image src="/sn-logo.svg" alt="SoftNix Logo" width={48} height={48} className="w-10 h-10 sm:w-12 sm:h-12 drop-shadow-xl rounded-2xl" />
         <span className="inline-block text-2xl sm:text-3xl md:text-4xl font-black tracking-tight bg-gradient-to-r from-blue-600 via-purple-500 to-pink-500 bg-clip-text text-transparent drop-shadow-lg">
           SoftNix
         </span>

@@ -35,7 +35,7 @@ export default function SocialLinks() {
         transition={{ duration: 0.8 }}
         className="flex gap-4 sm:gap-8 justify-center"
       >
-        {links.map((link, i) => (
+        {links.map((link) => (
           <motion.a
             key={link.label}
             href={link.href}
