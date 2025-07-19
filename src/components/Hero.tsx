@@ -94,16 +94,36 @@ export default function Hero() {
         initial="hidden"
         animate="visible"
       >
-        {"Web Geliştirme, Tasarım, "}
-        <motion.span className="whitespace-nowrap" variants={letterVariants}>
-          Kodlama
-        </motion.span>
+        <span className="whitespace-nowrap">
+          {"Web Geliştirme".split("").map((char, i) => (
+            <motion.span key={"web-"+i} variants={letterVariants} className="inline-block">
+              {char === " " ? "\u00A0" : char}
+            </motion.span>
+          ))}
+        </span>
+        {/* Virgül animasyonu */}
+        <motion.span variants={letterVariants} className="inline-block">,</motion.span>
+        <span className="whitespace-nowrap">
+          {"Tasarım".split("").map((char, i) => (
+            <motion.span key={"tasarim-"+i} variants={letterVariants} className="inline-block">
+              {char}
+            </motion.span>
+          ))}
+        </span>
+        <motion.span variants={letterVariants} className="inline-block">,</motion.span>
+        <span className="whitespace-nowrap">
+          {"Kodlama".split("").map((char, i) => (
+            <motion.span key={"kodlama-"+i} variants={letterVariants} className="inline-block">
+              {char}
+            </motion.span>
+          ))}
+        </span>
       </motion.h1>
       <motion.h2
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: 0.5, type: "spring" }}
-        className="text-base sm:text-xl md:text-3xl font-bold text-gray-700 dark:text-gray-200 mb-4 sm:mb-8"
+        className="text-base sm:text-xl md:text-3xl font-bold text-gray-700 dark:text-gray-200 mb-2 sm:mb-4"
       >
         {headline[1]}
       </motion.h2>
@@ -111,7 +131,7 @@ export default function Hero() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: 0.8 }}
-        className="max-w-xl text-base sm:text-lg md:text-xl text-gray-500 dark:text-gray-300 mb-6 sm:mb-8"
+        className="max-w-xl text-base sm:text-lg md:text-xl text-gray-500 dark:text-gray-300 mb-4 sm:mb-4"
       >
         Modern, etkileyici ve yüksek performanslı dijital çözümlerle işinizi bir üst seviyeye taşıyın.
       </motion.p>
@@ -119,7 +139,7 @@ export default function Hero() {
         href="#contact"
         whileHover={{ scale: 1.08, boxShadow: "0 0 24px 0 #a78bfa", background: "linear-gradient(90deg,#60a5fa,#a78bfa,#f472b6)", color: "#fff" }}
         whileTap={{ scale: 0.96 }}
-        className="inline-block px-5 sm:px-8 py-2.5 sm:py-3 rounded-full bg-gradient-to-r from-blue-600 to-pink-500 text-white font-semibold shadow-lg hover:shadow-xl transition-all duration-300"
+        className="inline-block px-5 sm:px-8 py-2.5 sm:py-3 rounded-full bg-gradient-to-r from-blue-600 to-pink-500 text-white font-semibold shadow-lg hover:shadow-xl transition-all duration-300 mb-2"
       >
         Teklif Al
       </motion.a>
