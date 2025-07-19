@@ -94,11 +94,10 @@ export default function Hero() {
         initial="hidden"
         animate="visible"
       >
-        {headline[0].split("").map((char, i) => (
-          <motion.span key={i} variants={letterVariants} className="inline-block">
-            {char === " " ? "\u00A0" : char}
-          </motion.span>
-        ))}
+        {"Web Geliştirme, Tasarım, "}
+        <motion.span className="whitespace-nowrap" variants={letterVariants}>
+          Kodlama
+        </motion.span>
       </motion.h1>
       <motion.h2
         initial={{ opacity: 0, y: 40 }}
