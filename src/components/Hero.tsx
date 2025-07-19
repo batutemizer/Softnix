@@ -20,7 +20,7 @@ const titleVariants = {
 
 const letterVariants = {
   hidden: { opacity: 0, y: 30 },
-  visible: { opacity: 1, y: 0, transition: { type: "spring", damping: 12, stiffness: 200 } },
+  visible: { opacity: 1, y: 0, transition: { type: "spring" as const, damping: 12, stiffness: 200 } },
 };
 
 export default function Hero() {
