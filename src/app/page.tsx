@@ -5,7 +5,6 @@ import Stats from "../components/Stats";
 import SocialLinks from "../components/SocialLinks";
 import Services from "../components/Services";
 import ContactForm from "../components/ContactForm";
-import WhatsAppFloat from "../components/WhatsAppFloat";
 
 export default function Home() {
   return (
@@ -19,7 +18,6 @@ export default function Home() {
         <Services />
         <ContactForm />
       </main>
-      <WhatsAppFloat />
     </>
   );
 }
