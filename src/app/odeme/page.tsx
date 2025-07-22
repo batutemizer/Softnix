@@ -1,6 +1,6 @@
 "use client";
 import { useRouter } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { FaCreditCard, FaUser, FaEnvelope, FaCalendarAlt, FaLock } from "react-icons/fa";
 
 function onlyDigits(str: string) {
