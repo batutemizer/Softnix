@@ -1,5 +1,5 @@
 "use client";
-import { useRef, useEffect, useState } from "react";
+import { useRef, useEffect, useState, Dispatch, SetStateAction } from "react";
 import { useRouter } from "next/navigation";
 import { motion } from "framer-motion";
 
@@ -87,7 +87,7 @@ const packages: Package[] = [
 
 type StatsProps = {
   cart: Package[];
-  setCart: (cart: Package[]) => void;
+  setCart: Dispatch<SetStateAction<Package[]>>;
 };
 
 export default function Stats({ cart, setCart }: StatsProps) {
